@@ -9,11 +9,7 @@ builder.Services.AddControllersWithViews();
 
 builder.Services.AddDbContext<DatabaseTaskDbContext>(options => 
     options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
-//void ConfigureServices(IServiceCollection services)
-//{
-//    services.AddDbContext<DatabaseTaskDbContext>(options =>
-//        options.UseSqlServer(Microsoft.Extensions.Configuration.GetConnectionString("databasename")));
-//}
+
 
 var app = builder.Build();
 
